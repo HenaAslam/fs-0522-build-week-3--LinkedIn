@@ -75,7 +75,6 @@ const PostCard = (props: IProps) => {
     setShow(false);
   };
 
-
   const handleFileUpload = (event: React.ChangeEvent<HTMLInputElement>) => {
     const files = event.target.files;
     if (files && files.length > 0) {
@@ -83,30 +82,32 @@ const PostCard = (props: IProps) => {
     } else {
       setFile(null);
     }
-  }
-
+  };
 
   const handleImageUpload = async (file: any, postId: any) => {
     try {
       const formData = new FormData();
       formData.append("post", file);
-      let response = await fetch("https://striveschool-api.herokuapp.com/api/posts/" + postId, {
-        method: "POST",
-        body: formData,
-        headers: {
-          Authorization:
-            "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2YzZmU0NTExZDczZDAwMTM3YWFhZGUiLCJpYXQiOjE2NzY5MzQ3MjUsImV4cCI6MTY3ODE0NDMyNX0.OlrbIxHrNB0R7dnd4jirS2aUw3YiiJvvDWw2W_1I2f4",
+      let response = await fetch(
+        "https://striveschool-api.herokuapp.com/api/posts/" + postId,
+        {
+          method: "POST",
+          body: formData,
+          headers: {
+            Authorization:
+              "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2YzNmZmNTgzODFmYzAwMTNmZmZhZGYiLCJpYXQiOjE2NzY4OTgyOTQsImV4cCI6MTY3ODEwNzg5NH0.n_FTGhlX9c6j23fCYIPFM6lg70LgdPtYXQ8thi09Ges",
+          },
         }
-      })
+      );
       if (response.ok) {
-        console.log("You made it!")
+        console.log("You made it!");
       } else {
-        console.log("Try harder!")
+        console.log("Try harder!");
       }
     } catch (error) {
-      console.log(error)
+      console.log(error);
     }
-  }
+  };
 
   return (
     <Row>
