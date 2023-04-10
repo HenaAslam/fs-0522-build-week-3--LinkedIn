@@ -19,7 +19,7 @@ export const fetchAllProfilesAction = () => {
         {
           headers: {
             Authorization:
-              "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2YzNmZmNTgzODFmYzAwMTNmZmZhZGYiLCJpYXQiOjE2NzY4OTgyOTQsImV4cCI6MTY3ODEwNzg5NH0.n_FTGhlX9c6j23fCYIPFM6lg70LgdPtYXQ8thi09Ges",
+              "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDMzY2JmODQ0NTRjZTAwMTRjYWM1OWIiLCJpYXQiOjE2ODExMTYxNTIsImV4cCI6MTY4MjMyNTc1Mn0.7oTPPwwctvYyjn8QPk60CJv0uWD99slt94RUYvnpuBI",
           },
         }
       );
@@ -43,11 +43,11 @@ export const fetchExperienceAction = () => {
   return async (dispatch: Dispatch) => {
     try {
       let response = await fetch(
-        "https://striveschool-api.herokuapp.com/api/profile/63f36ff58381fc0013fffadf/experiences",
+        "https://striveschool-api.herokuapp.com/api/profile/6433cbf84454ce0014cac59b/experiences",
         {
           headers: {
             Authorization:
-              "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2YzNmZmNTgzODFmYzAwMTNmZmZhZGYiLCJpYXQiOjE2NzY4OTgyOTQsImV4cCI6MTY3ODEwNzg5NH0.n_FTGhlX9c6j23fCYIPFM6lg70LgdPtYXQ8thi09Ges",
+              "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDMzY2JmODQ0NTRjZTAwMTRjYWM1OWIiLCJpYXQiOjE2ODExMTYxNTIsImV4cCI6MTY4MjMyNTc1Mn0.7oTPPwwctvYyjn8QPk60CJv0uWD99slt94RUYvnpuBI",
           },
         }
       );
@@ -79,14 +79,14 @@ export const postJobAction = (job: {
   return async (dispatch: Dispatch) => {
     try {
       let response = await fetch(
-        "https://striveschool-api.herokuapp.com/api/profile/63f36ff58381fc0013fffadf/experiences",
+        "https://striveschool-api.herokuapp.com/api/profile/6433cbf84454ce0014cac59b/experiences",
         {
           method: "POST",
           body: JSON.stringify(job),
           headers: {
             "Content-Type": "application/json",
             Authorization:
-              "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2YzNmZmNTgzODFmYzAwMTNmZmZhZGYiLCJpYXQiOjE2NzY4OTgyOTQsImV4cCI6MTY3ODEwNzg5NH0.n_FTGhlX9c6j23fCYIPFM6lg70LgdPtYXQ8thi09Ges",
+              "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDMzY2JmODQ0NTRjZTAwMTRjYWM1OWIiLCJpYXQiOjE2ODExMTYxNTIsImV4cCI6MTY4MjMyNTc1Mn0.7oTPPwwctvYyjn8QPk60CJv0uWD99slt94RUYvnpuBI",
           },
         }
       );
@@ -108,14 +108,14 @@ export const deleteJobAction = (id: string) => {
   return async (dispatch: Dispatch) => {
     try {
       let response = await fetch(
-        "https://striveschool-api.herokuapp.com/api/profile/63f36ff58381fc0013fffadf/experiences/" +
+        "https://striveschool-api.herokuapp.com/api/profile/6433cbf84454ce0014cac59b/experiences/" +
           id,
         {
           method: "DELETE",
 
           headers: {
             Authorization:
-              "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2YzNmZmNTgzODFmYzAwMTNmZmZhZGYiLCJpYXQiOjE2NzY4OTgyOTQsImV4cCI6MTY3ODEwNzg5NH0.n_FTGhlX9c6j23fCYIPFM6lg70LgdPtYXQ8thi09Ges",
+              "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDMzY2JmODQ0NTRjZTAwMTRjYWM1OWIiLCJpYXQiOjE2ODExMTYxNTIsImV4cCI6MTY4MjMyNTc1Mn0.7oTPPwwctvYyjn8QPk60CJv0uWD99slt94RUYvnpuBI",
           },
         }
       );
@@ -140,13 +140,13 @@ export const fetchMyProfileAction = () => {
           method: "GET",
           headers: {
             Authorization:
-              "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2YzNmZmNTgzODFmYzAwMTNmZmZhZGYiLCJpYXQiOjE2NzY4OTgyOTQsImV4cCI6MTY3ODEwNzg5NH0.n_FTGhlX9c6j23fCYIPFM6lg70LgdPtYXQ8thi09Ges",
+              "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDMzY2JmODQ0NTRjZTAwMTRjYWM1OWIiLCJpYXQiOjE2ODExMTYxNTIsImV4cCI6MTY4MjMyNTc1Mn0.7oTPPwwctvYyjn8QPk60CJv0uWD99slt94RUYvnpuBI",
           },
         }
       );
       if (response.ok) {
         let myProfile = await response.json();
-        // console.log(myProfile);
+        console.log(myProfile);
 
         dispatch({ type: GET_MY_PROFILE, payload: myProfile });
       } else {
@@ -181,7 +181,7 @@ export const editJobAction = (
     try {
       // console.log(id);
       let response = await fetch(
-        "https://striveschool-api.herokuapp.com/api/profile/63f36ff58381fc0013fffadf/experiences/" +
+        "https://striveschool-api.herokuapp.com/api/profile/6433cbf84454ce0014cac59b/experiences/" +
           id,
         {
           method: "PUT",
@@ -189,7 +189,7 @@ export const editJobAction = (
           headers: {
             "Content-Type": "application/json",
             Authorization:
-              "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2YzNmZmNTgzODFmYzAwMTNmZmZhZGYiLCJpYXQiOjE2NzY4OTgyOTQsImV4cCI6MTY3ODEwNzg5NH0.n_FTGhlX9c6j23fCYIPFM6lg70LgdPtYXQ8thi09Ges",
+              "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDMzY2JmODQ0NTRjZTAwMTRjYWM1OWIiLCJpYXQiOjE2ODExMTYxNTIsImV4cCI6MTY4MjMyNTc1Mn0.7oTPPwwctvYyjn8QPk60CJv0uWD99slt94RUYvnpuBI",
           },
         }
       );
@@ -222,7 +222,7 @@ export const editMyProfileAction = (editProfile: {
           headers: {
             "Content-Type": "application/json",
             Authorization:
-              "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2YzNmZmNTgzODFmYzAwMTNmZmZhZGYiLCJpYXQiOjE2NzY4OTgyOTQsImV4cCI6MTY3ODEwNzg5NH0.n_FTGhlX9c6j23fCYIPFM6lg70LgdPtYXQ8thi09Ges",
+              "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDMzY2JmODQ0NTRjZTAwMTRjYWM1OWIiLCJpYXQiOjE2ODExMTYxNTIsImV4cCI6MTY4MjMyNTc1Mn0.7oTPPwwctvYyjn8QPk60CJv0uWD99slt94RUYvnpuBI",
           },
         }
       );
@@ -249,7 +249,7 @@ export const editBioAction = (about: { bio: string }) => {
           headers: {
             "Content-Type": "application/json",
             Authorization:
-              "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2YzNmZmNTgzODFmYzAwMTNmZmZhZGYiLCJpYXQiOjE2NzY4OTgyOTQsImV4cCI6MTY3ODEwNzg5NH0.n_FTGhlX9c6j23fCYIPFM6lg70LgdPtYXQ8thi09Ges",
+              "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDMzY2JmODQ0NTRjZTAwMTRjYWM1OWIiLCJpYXQiOjE2ODExMTYxNTIsImV4cCI6MTY4MjMyNTc1Mn0.7oTPPwwctvYyjn8QPk60CJv0uWD99slt94RUYvnpuBI",
           },
         }
       );
@@ -273,7 +273,7 @@ export const fetchPostsAction = () => {
           method: "GET",
           headers: {
             Authorization:
-              "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2YzNmZmNTgzODFmYzAwMTNmZmZhZGYiLCJpYXQiOjE2NzY4OTgyOTQsImV4cCI6MTY3ODEwNzg5NH0.n_FTGhlX9c6j23fCYIPFM6lg70LgdPtYXQ8thi09Ges",
+              "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDMzY2JmODQ0NTRjZTAwMTRjYWM1OWIiLCJpYXQiOjE2ODExMTYxNTIsImV4cCI6MTY4MjMyNTc1Mn0.7oTPPwwctvYyjn8QPk60CJv0uWD99slt94RUYvnpuBI",
           },
         }
       );
@@ -300,7 +300,7 @@ export const deletePost = (id: string) => {
 
           headers: {
             Authorization:
-              "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2YzNmZmNTgzODFmYzAwMTNmZmZhZGYiLCJpYXQiOjE2NzY4OTgyOTQsImV4cCI6MTY3ODEwNzg5NH0.n_FTGhlX9c6j23fCYIPFM6lg70LgdPtYXQ8thi09Ges",
+              "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDMzY2JmODQ0NTRjZTAwMTRjYWM1OWIiLCJpYXQiOjE2ODExMTYxNTIsImV4cCI6MTY4MjMyNTc1Mn0.7oTPPwwctvYyjn8QPk60CJv0uWD99slt94RUYvnpuBI",
           },
         }
       );
@@ -340,7 +340,7 @@ export const editPostAction = (editPost: { text: string }, id: string) => {
           headers: {
             "Content-Type": "application/json",
             Authorization:
-              "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2YzNmZmNTgzODFmYzAwMTNmZmZhZGYiLCJpYXQiOjE2NzY4OTgyOTQsImV4cCI6MTY3ODEwNzg5NH0.n_FTGhlX9c6j23fCYIPFM6lg70LgdPtYXQ8thi09Ges",
+              "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDMzY2JmODQ0NTRjZTAwMTRjYWM1OWIiLCJpYXQiOjE2ODExMTYxNTIsImV4cCI6MTY4MjMyNTc1Mn0.7oTPPwwctvYyjn8QPk60CJv0uWD99slt94RUYvnpuBI",
           },
         }
       );
