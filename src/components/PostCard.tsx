@@ -95,7 +95,7 @@ const PostCard = (props: IProps) => {
           body: formData,
           headers: {
             Authorization:
-              "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2YzNmZmNTgzODFmYzAwMTNmZmZhZGYiLCJpYXQiOjE2NzY4OTgyOTQsImV4cCI6MTY3ODEwNzg5NH0.n_FTGhlX9c6j23fCYIPFM6lg70LgdPtYXQ8thi09Ges",
+              "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDMzY2JmODQ0NTRjZTAwMTRjYWM1OWIiLCJpYXQiOjE2ODExMTYxNTIsImV4cCI6MTY4MjMyNTc1Mn0.7oTPPwwctvYyjn8QPk60CJv0uWD99slt94RUYvnpuBI",
           },
         }
       );
